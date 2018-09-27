@@ -1,0 +1,6 @@
+q = 2.0 * (10**-6)
+a = 1.0 * (10**-6)
+k = 8.99 * (10**9)
+r = float(input('geef afstand in cm: '))
+resultaat = str(k* ((q * a) / ((r* (10**-2))**2)))
+print(resultaat)
