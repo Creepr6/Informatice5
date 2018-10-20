@@ -11,3 +11,6 @@ if a == 'nee':
         print(str(1))
     else:
         print(str(5))
+
+#############
+probeer korter met and enz
