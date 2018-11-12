@@ -2,8 +2,9 @@
 kaas = int(input('aantal getallen:'))
 
 #berekenen
+from math import unlimited
 x = 0
-grootste = -10000000000000000000000
+grootste = -10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 for i in range(kaas):
    getal = int(input('getal: '))
    x += getal
