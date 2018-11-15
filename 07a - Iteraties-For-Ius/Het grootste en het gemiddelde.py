@@ -2,7 +2,6 @@
 kaas = int(input('aantal getallen:'))
 
 #berekenen
-from math import unlimited
 x = grootste
 grootste = int(input('getal: '))
 for i in range(kaas - 1):
