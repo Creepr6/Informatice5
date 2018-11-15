@@ -3,9 +3,9 @@ kaas = int(input('aantal getallen:'))
 
 #berekenen
 from math import unlimited
-x = 0
-grootste = -10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-for i in range(kaas):
+x = grootste
+grootste = int(input('getal: '))
+for i in range(kaas - 1):
    getal = int(input('getal: '))
    x += getal
    gemiddelde = (x / kaas)
@@ -17,10 +17,3 @@ antwoord = 'Het grootste getal is ' + str(grootste) + ' en het gemiddelde is ' +
 
 #uitvoer
 print(antwoord)
-
-
-
-
-
-
-
