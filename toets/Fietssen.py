@@ -14,6 +14,6 @@ while afstand_tussen_beiden > 0:
 antwoord = 'Na ' + str(aantal_seconden) + ' s hebben Stijn en Kaat elkaar ontmoet.'
 
 #uitvoeren
-print(str(antwoord))
+print(antwoord)
 
 

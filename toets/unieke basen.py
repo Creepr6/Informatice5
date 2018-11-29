@@ -18,4 +18,4 @@ elif aantal_basen > 1:
     antwoord = 'De DNA-keting bevat ' + str(aantal_basen) + ' verschillende soorten basen: ' + woord
 
 #uitvoer
-print(str(antwoord))
+print(antwoord)
