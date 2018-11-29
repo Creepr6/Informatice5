@@ -1,0 +1,2 @@
+h = float(input('getal: '))
+
