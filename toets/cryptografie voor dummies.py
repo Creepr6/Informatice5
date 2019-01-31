@@ -19,3 +19,20 @@ def versleutel_zin(zin, n):
     return nieuwe_zin
 
 
+#in de les
+def versleutel_zin(zin, n):
+
+    indexspatie = zin.find(' ')
+    code = ''
+    #tot er geen spaties meer zijn
+    while indexspatie != -1:
+        woord = zin[:indexspatie]
+        zin = zin[indexspatie + 1:]
+
+        code += '@' + versleutel_woord(zin, getal)
+        indexspatie = zin.find(' ')
+
+    if len(zin) > 0:
+        code += '@' + versleutel_woord(zin, getal)
+
+    return code
