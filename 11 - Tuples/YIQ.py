@@ -6,4 +6,4 @@ def yiq(rgb):
 
     return round(y, 4), round(i, 4), round(q, 4)
 
-print(yiq((12,12,12)))
+print(yiq((12,12,12))) 
