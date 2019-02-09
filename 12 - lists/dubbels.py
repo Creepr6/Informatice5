@@ -8,4 +8,4 @@ def dubbels(lijst):
 
     return nieuwe_lijst
 
-print(dubbels(['kaas', 'brokoli', 'kaas']))
+
