@@ -30,6 +30,10 @@ def teruggekeerd(pijltjescombinatie):
 
     return k == 1
 
+def teruggekeerdles(richtingen):
+    richtingen.sort()
+    return richtingen == ['<', '>'] or richtingen == ['^', 'v']
+
 def laatste_levende_positie(pijltjestoetsen):
     i = 1
     coordinaat = beweeg((0, 0), pijltjestoetsen[0])
