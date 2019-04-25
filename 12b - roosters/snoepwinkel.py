@@ -18,3 +18,4 @@ def sorteer(boodschappenlijst):
     boodschappenlijst.sort(key=itemgetter(1))
 
     return boodschappenlijst
+
