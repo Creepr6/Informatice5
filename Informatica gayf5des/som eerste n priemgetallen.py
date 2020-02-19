@@ -18,5 +18,3 @@ while i < n + 1:
         getal += 1
 
 print(som)
-
-

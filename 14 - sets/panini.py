@@ -1,30 +1,28 @@
-def verzamel(speler, stickerboek, dubbels):
-    x = len(stickerboek)
-    y = len(dubbels)
-    spelerdict = {speler}
-    stickerboek.add(speler)
-    erin = 0
-    algedaan = 0
+def verzamel(kaart, boek, dubbel):
+    lengte = len(boek)
+    boek.add(kaart)
+    if len(boek) != lengte:
+        return boek, dubbel
+    nieuw = {kaart}
+    verder = 0
+    for key, value in dubbel.items():
+        if nieuw.issubset(value):
 
-    if len(stickerboek) == x:
-        sleutel = 1
-        for key in dubbels.keys():
-
-            for value in dubbels.values():
-
-                if value == spelerdict and algedaan != 1:
-                    sleutel += key
-                    algedaan += 1
-                else:
-                    erin += 1
-        if erin > 1:
-            erin = erin/2
-        if erin == len(dubbels):
-            dubbels[1] = spelerdict
+            sleutel = key
+            verder = 1
+    if verder:
+        dubbel[sleutel].remove(kaart)
+        if dubbel[sleutel] == set():
+            dubbel.pop(sleutel)
+        if sleutel + 1 in dubbel:
+            dubbel[sleutel + 1].add(nieuw)
         else:
-            dubbels.pop(sleutel - 1)
-            dubbels[sleutel] = spelerdict
-    return stickerboek, dubbels
-
+            dubbel[sleutel + 1] = nieuw
+    else:
+        if 1 in dubbel:
+            dubbel[1].add(kaart)
+        else:
+            dubbel[1] = nieuw
+    return boek, dubbel
 print(verzamel('Bosmans',{'Weber', 'Bosmans'},{}))
 
